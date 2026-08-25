@@ -1,40 +1,33 @@
 #Launcher
 
-Launcher is an Acode plugin for launching, inspecting and previewing projects directly from Acode.
-
-## 🚧 Beta
-
-**Launcher is currently in Beta (`0.1.0`).**
-
-Some features may change and bugs may still exist.
+Project Launcher is an Acode plugin for managing and previewing the project currently opened in Acode.
 
 ## Features
 
-- 🚀 Project Launcher dashboard
-- 🔎 Automatic project detection
-- 📁 File and directory listing
-- ℹ️ Project information
-- 🔄 Project refresh
-- 🌐 HTML preview
-- 📱 Mobile-friendly interface
+- Detect project type automatically.
+- Detect HTML, PHP, Node.js, Vite, TypeScript and Python projects.
+- Display project files and directories.
+- Display project information.
+- Refresh the current project.
+- Preview `index.html`.
+- Mobile-friendly interface.
+- Dark blue interface.
 
-## Supported project types
+## Usage
 
-- HTML
-- CSS
-- JavaScript
-- Node.js
-- Vite
-- TypeScript
-- PHP
-- Python
+1. Open a project folder in Acode.
+2. Open the Acode command palette.
+3. Run `Launcher`.
+4. Select an available action.
+
+## Preview
+
+The Preview feature looks for `index.html` in the current project and displays it in an isolated preview frame.
 
 ## Requirements
 
-Acode with version code 290 or newer.
+Acode version 1.11.2 or newer.
 
 ## Author
 
 Hacker 2.0
-
-GitHub: Degrace15
