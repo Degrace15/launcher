@@ -1,6 +1,6 @@
 {
   "name": "launcher",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "description": "Launch and manage projects directly from Acode.",
   "type": "module",
   "scripts": {
