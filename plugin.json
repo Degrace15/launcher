@@ -1,0 +1,31 @@
+{
+  "id": "com.degrace.projectlauncher",
+  "name": "Launcher",
+  "main": "dist/main.js",
+  "version": "0.1.0",
+  "readme": "readme.md",
+  "icon": "icon.png",
+  "changelogs": "CHANGELOG.md",
+  "repository": "https://github.com/Degrace15/launcher.git",
+  "minVersionCode": 290,
+  "price": 0,
+  "license": "MIT",
+  "keywords": [
+    "project",
+    "launcher",
+    "preview",
+    "web",
+    "developer",
+    "workspace"
+  ],
+  "author": {
+    "name": "Hacker 2.0",
+    "github": "Degrace15"
+  },
+  "files": [
+    "dist/main.js",
+    "readme.md",
+    "CHANGELOG.md",
+    "icon.png"
+  ]
+}

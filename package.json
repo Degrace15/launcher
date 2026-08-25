@@ -1,0 +1,15 @@
+{
+  "name": "launcher",
+  "version": "0.1.0",
+  "description": "Launch and manage projects directly from Acode.",
+  "type": "module",
+  "scripts": {
+    "build": "node esbuild.config.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1"
+  }
+}
