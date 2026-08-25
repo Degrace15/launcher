@@ -26,7 +26,7 @@ The Preview feature looks for `index.html` in the current project and displays i
 
 ## Requirements
 
-Acode version 1.11.2 or newer.
+Acode version 1.12.9 or newer.
 
 ## Author
 
