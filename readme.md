@@ -1,6 +1,6 @@
 #Launcher
 
-Project Launcher is an Acode plugin for managing and previewing the project currently opened in Acode.
+Launcher is an Acode plugin for managing and previewing the project currently opened in Acode.
 
 ## Features
 
