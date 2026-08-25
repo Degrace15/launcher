@@ -2,7 +2,7 @@
   "id": "com.degrace.projectlauncher",
   "name": "Launcher",
   "main": "dist/main.js",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "readme": "readme.md",
   "icon": "icon.png",
   "changelogs": "CHANGELOG.md",
