@@ -1,4 +1,4 @@
-(()=>{var m={id:"com.degrace.projectlauncher",name:"Launcher",main:"dist/main.js",version:"0.1.0",readme:"readme.md",icon:"icon.png",changelogs:"CHANGELOG.md",repository:"https://github.com/Degrace15/launcher.git",minVersionCode:290,price:0,license:"MIT",keywords:["project","launcher","preview","web","developer","workspace"],author:{name:"Hacker 2.0",github:"Degrace15"},files:["dist/main.js","readme.md","CHANGELOG.md","icon.png"]};var s=null,p=null,u=null;function y(e,t,a){let n=acode.require("commands");u=acode.require("fsOperation"),n.addCommand({name:"launcher",description:"Open Launcher",exec:async()=>{if(p=addedFolder?.[0],!p){acode.alert("Launcher","Please open a project folder in Acode first.");return}await w()}})}async function h(){if(!p)throw new Error("No project folder is open.");return await u(p.url)}async function x(){let t=await(await h()).lsDir(),a=[],n=[];for(let c of t){let g=c.name||"";c.isDirectory?n.push(g):a.push(g)}let o=a.map(c=>c.toLowerCase()),i="Unknown",r="\u{1F4E6}",d="No known project configuration detected.";return o.includes("package.json")&&(i="Node.js",r="\u{1F7E8}",d="JavaScript or Node.js project."),(o.includes("vite.config.js")||o.includes("vite.config.ts")||o.includes("vite.config.mjs"))&&(i="Vite",r="\u26A1",d="Vite-based web project."),o.includes("index.html")&&i==="Unknown"&&(i="HTML / CSS / JavaScript",r="\u{1F310}",d="Web project with an HTML entry point."),(o.includes("index.php")||o.some(c=>c.endsWith(".php")))&&(i="PHP",r="\u{1F418}",d="PHP project."),(o.includes("main.py")||o.some(c=>c.endsWith(".py")))&&(i="Python",r="\u{1F40D}",d="Python project."),o.includes("tsconfig.json")&&(i="TypeScript",r="\u{1F537}",d="TypeScript project."),{name:$(p.url),path:p.url,type:i,icon:r,description:d,files:a,directories:n}}async function w(){f();let e=await x();s=document.createElement("div"),s.id="project-launcher",s.innerHTML=`
+(()=>{var m={id:"com.degrace.projectlauncher",name:"Launcher",main:"dist/main.js",version:"1.0.0",readme:"readme.md",icon:"icon.png",changelogs:"CHANGELOG.md",repository:"https://github.com/Degrace15/launcher.git",minVersionCode:290,price:0,license:"MIT",keywords:["project","launcher","preview","web","developer","workspace"],author:{name:"Hacker 2.0",github:"Degrace15"},files:["dist/main.js","readme.md","CHANGELOG.md","icon.png"]};var s=null,p=null,u=null;function y(e,t,a){let n=acode.require("commands");u=acode.require("fsOperation"),n.addCommand({name:"launcher",description:"Open Launcher",exec:async()=>{if(p=addedFolder?.[0],!p){acode.alert("Launcher","Please open a project folder in Acode first.");return}await w()}})}async function h(){if(!p)throw new Error("No project folder is open.");return await u(p.url)}async function x(){let t=await(await h()).lsDir(),a=[],n=[];for(let c of t){let g=c.name||"";c.isDirectory?n.push(g):a.push(g)}let o=a.map(c=>c.toLowerCase()),i="Unknown",r="\u{1F4E6}",d="No known project configuration detected.";return o.includes("package.json")&&(i="Node.js",r="\u{1F7E8}",d="JavaScript or Node.js project."),(o.includes("vite.config.js")||o.includes("vite.config.ts")||o.includes("vite.config.mjs"))&&(i="Vite",r="\u26A1",d="Vite-based web project."),o.includes("index.html")&&i==="Unknown"&&(i="HTML / CSS / JavaScript",r="\u{1F310}",d="Web project with an HTML entry point."),(o.includes("index.php")||o.some(c=>c.endsWith(".php")))&&(i="PHP",r="\u{1F418}",d="PHP project."),(o.includes("main.py")||o.some(c=>c.endsWith(".py")))&&(i="Python",r="\u{1F40D}",d="Python project."),o.includes("tsconfig.json")&&(i="TypeScript",r="\u{1F537}",d="TypeScript project."),{name:$(p.url),path:p.url,type:i,icon:r,description:d,files:a,directories:n}}async function w(){f();let e=await x();s=document.createElement("div"),s.id="project-launcher",s.innerHTML=`
 
     <div class="pl-wrapper">
 
@@ -585,23 +585,19 @@
     .pl-preview-header button {
 
       border: 0;
-
-      background:
+                                                        background:
         rgba(255,255,255,.1);
 
       color: white;
 
       width: 34px;
 
-      height: 34px;
-
-      border-radius: 8px;
+      height: 34px;                                                                                       border-radius: 8px;
 
       margin-left: 5px;
 
     }
-
-
+                                                  
     #pl-preview-frame {
 
       width: 100%;
